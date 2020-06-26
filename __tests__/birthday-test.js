@@ -13,6 +13,7 @@ describe('User', () => {
     const mercury = new Planet ("mercury");
     mercury.getDays();
     mercury.convertToEarthYears();
+    user1.getAgeInDays();
     user1.convertEarthAgeToOtherPlanetAge();
     expect(user1.ageOnMercury).toBe(136)
   });
