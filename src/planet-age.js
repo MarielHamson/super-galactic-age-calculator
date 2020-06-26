@@ -12,7 +12,7 @@ export class Planet {
   }
 
   convertToEarthYears(){
-
+    this.earthYears = Number.parseFloat((this.days / 365).toPrecision(2))
   }
 }
 

@@ -14,6 +14,7 @@ describe('Planet', () => {
   
   test('should convert planet days to Earth years', () => {
     const mercury = new Planet("mercury")
+    mercury.getDays();
     mercury.convertToEarthYears();
     expect(mercury.earthYears).toBe(.24)
   });
