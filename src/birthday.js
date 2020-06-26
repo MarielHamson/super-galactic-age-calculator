@@ -3,7 +3,7 @@ export class User {
   this.ageInDays = age;
   } 
 
-  getAgeInDays (birthday) {
-  this.ageInDays = Math.floor((new Date() - new Date(1987, 8, 5)) / (86400000));
+  getAgeInDays (yearsOld, birthMonth, birthDay) {
+  this.ageInDays = yearsOld * 365 + (birthMonth*30.5) + birthDay
   }
 }
