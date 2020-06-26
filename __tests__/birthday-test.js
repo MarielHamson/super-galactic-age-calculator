@@ -1,8 +1,8 @@
-import { Birthday } from "../src/birthday";
+import { User } from "../src/birthday";
 
-describe('Birthday', () => {
-  test('Should return user birthday', () => {
-  const userBirthday = new Birthday;
-  expect(userBirthday.date).toBe(" ")
+describe('User', () => {
+  test('Should return user age in Earth days', () => {
+  const userBirthday = new User;
+  expect(userBirthday.ageinDays).toBe(" ")
   });
 });
