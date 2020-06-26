@@ -1,9 +1,9 @@
 import { Planet } from "../src/planet-years";
-const mercury = new Planet ("mercury")
+const mercury = new Planet ("mercury");
 
 export class User {
-  constructor (ageOnEarth, ageOnMercury) {
-  this.ageInDays = ageOnEarth;
+  constructor (ageInDays, ageOnMercury) {
+  this.ageInDays = ageInDays;
   this.ageOnMercury = ageOnMercury
   } 
 
@@ -13,8 +13,9 @@ export class User {
   }
 
   convertEarthAgeToOtherPlanetAge() {
-         
-      // this.ageOnMercury = this.ageInDays / mercury.days
+    if (mercury.planetName === "mercury") {
+      this.ageOnMercury = Number.parseFloat((this.ageInDays / 88).toPrecision(5))
+     }
     }
   }
 
