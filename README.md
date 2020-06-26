@@ -11,7 +11,6 @@ _This application will take user's age on Earth and convert it to ages on differ
 | Behavior | Input | Output |  Completed(Y/N?)  | 
 | -------- | ----- | ------ | -------- |
 |  Return an error when incorrect input is received |  abcd! | " "   | Y
-|  Return how many days in a solar year when planet is selected| Mercury | "88 days in a year"   | Y
 |  Return age in Earth days, given birthdate | 08/13/1987 | ~1200 days old | Y
 |  Return the equivalent planet years | Mercury | .24 Earth Years | Y
 |  Return age in Mercury based on Earth birthday |  08.13.1987, Mercury | "135.74 years old on Mercury" | Y |
@@ -44,9 +43,9 @@ _This application will take user's age on Earth and convert it to ages on differ
 
 * Navigate to marielhamson.github.io/super-galactic-age-calculator
 
-## Known Bugs
+## Known Bugs / Issues
 
-_No Known Bugs at this time_
+_No UI present_
 
 ## Support and contact details
 
@@ -54,10 +53,10 @@ _Please let me know if you have any questions or concerns at mariel.hamson@gmail
 
 ## Technologies Used
 
-_HTML, CSS(Bootstrap), Javascript(jQuery)_
+_Javascript, webpack, Jest,_
 
 ### License
 
 *MIT License*
 
-Copyright (c) 2020 **_Mariel Hamson &_**
+Copyright (c) 2020 **_Mariel Hamson_**
