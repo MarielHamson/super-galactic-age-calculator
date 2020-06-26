@@ -16,4 +16,12 @@ describe('User', () => {
     user1.convertEarthAgeToOtherPlanetAge();
     expect(user1.ageOnMercury).toBe(135.74)
   });
+
+  test ('Should determine how many years away from life expectancy fulfillment', () => {
+    const user1 = new User;
+    const mercury = new Planet ("mercury");
+    user1.convertEarthAgeToOtherPlanetAge();
+    user1.calculateDoomsday();
+    expect(user1.timeToDie).toBe(" ")
+  })
 });

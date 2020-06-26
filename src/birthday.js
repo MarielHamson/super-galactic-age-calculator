@@ -17,6 +17,9 @@ export class User {
       this.ageOnMercury = Number.parseFloat((this.ageInDays / 88).toPrecision(5))
      }
     }
+  calculateDoomsday() {
+    
+  }
   }
 
 // know how many years old i am on earth
