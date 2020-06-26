@@ -1,3 +1,5 @@
+import { Planet } from "../src/planet-years";
+
 export class User {
   constructor (age) {
   this.ageInDays = age;
@@ -6,5 +8,9 @@ export class User {
   getAgeInDays (birthYear, birthMonth, birthDay) {
     let d = new Date();
     this.ageInDays = (d.getFullYear() - (birthYear+1)) * 365.26 + (birthMonth*30.5) + birthDay
+  }
+
+  convertToOtherPlanetDays(planetName) {
+    
   }
 }
