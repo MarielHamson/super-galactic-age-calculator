@@ -18,7 +18,7 @@ export class User {
      }
     }
   calculateDoomsday() {
-    
+    this.timeToDie = 414 - this.ageOnMercury 
   }
   }
 
