@@ -9,39 +9,40 @@
   <div class="container">
     <h1> Input your birthday and find out your age on other planets
     </h1>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
-            <form id="birthday">
-              <div class="form-group">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
+        <form id="birthday">
+          <div class="form-group">
             <label for="born">Year of Birth</label>
-          <input id="birthday-year" class="form-control" name=birthday-year type="number"></input>
-        </div>
-        <div class="form-group">
-          <label for="born">Month of Birth</label>
-          <input id="birthday-month" class="form-control" name=birthday-month type="number"></input>
-      </div>
-      <div class="form-group">
-        <label for="born">Date of Birth</label>
-      <input id="birthday-day" class="form-control" name=birthday-day type="number"></input>
-    </div>
-    <div id="planet-selection">
-      <p>Choose a planet</p>
-      <select class="form-control" id="planetary" name=planet>
-          <option id= "planet" value="mercury">Mercury</option>
-          <option id= "planet" value="venus">Venus</option>
-          <option id= "planet" value="mars">Mars</option>
-          <option id= "planet" value="jupiter">Jupiter</option>
-      </select>
+            <input id="birthday-year" class="form-control" name=birthday-year type="number"></input>
+          </div>
+          <div class="form-group">
+            <label for="born">Month of Birth</label>
+            <input id="birthday-month" class="form-control" name=birthday-month type="number"></input>
+          </div>
+          <div class="form-group">
+            <label for="born">Date of Birth</label>
+            <input id="birthday-day" class="form-control" name=birthday-day type="number"></input>
+          </div>
+          <div id="planet-selection">
+            <p>Choose a planet</p>
+            <select class="form-control" id="planetary" name=planet>
+              <option id="planet" value="mercury">Mercury</option>
+              <option id="planet" value="venus">Venus</option>
+              <option id="planet" value="mars">Mars</option>
+              <option id="planet" value="jupiter">Jupiter</option>
+            </select>
           </div>
           <br>
       </div>
       <br>
       <div class="form-group">
         <button type="submit" class="btn btn-success btn-fill">Submit Birthday</button>
-    </div>
-  </form>
+      </div>
+      </form>
 
       <div id="result"></div>
     </div>
-  </body>
+</body>
+
 </html>

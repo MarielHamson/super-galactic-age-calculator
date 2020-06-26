@@ -5,8 +5,8 @@ import $ from 'jquery';
 import { User } from "../src/birthday";
 import { Planet } from "../src/planet-name";
 
-$(document).ready(function () {
-  let planet = new Planet (planet)
+$(document).ready(function() {
+  let planet = new Planet(planet)
   let user = new User();
   $("form#birthday").submit(function(event) {
     event.preventDefault();
@@ -14,16 +14,7 @@ $(document).ready(function () {
     const dobMonth = parseInt($("input#birthday-month").val());
     const dobDay = parseInt($("input#birthday-day").val());
     const planet = parseInt($("#planet").val());
-  console.log(apple)
-
     user.getAgeInDays(dobYear, dobMonth, dobDay);
-    // user.converEarthAgeToOtherPlanetAge();
-    // user.calculateDoomsday();
-    // ("#result").text(`${user.ageOnMercury}`)
-    // ("#result").text(`${user.timeToDie}`)
-    console.log(apple)
     $("#result").show();
-
-
   });
 });
