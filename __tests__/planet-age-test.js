@@ -1,4 +1,4 @@
-import { Planet } from '../src/planet-age.js';
+import { Planet } from '../src/planet-years.js';
 
 describe('Planet', () => {
   test('Should return undefined when incorrect input is entered' , () => {
