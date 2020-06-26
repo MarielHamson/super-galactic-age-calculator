@@ -1,6 +1,6 @@
 export class Planet {
   constructor (days) {
-    this.days = " ";
+    this.days = 0;
     
   }
 }
