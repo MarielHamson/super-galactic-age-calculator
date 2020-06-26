@@ -1,10 +1,15 @@
 import { Planet } from "../src/planet-years";
-const mercury = new Planet ("mercury");
+const planet = new Planet ("jupiter");
 
 export class User {
-  constructor (ageInDays, ageOnMercury) {
-  this.ageInDays = ageInDays;
-  this.ageOnMercury = ageOnMercury
+  constructor (timePastExpectancy) {
+  this.ageInDays;
+  this.ageOnMercury;
+  this.ageOnVenus;
+  this.ageOnMars;
+  this.ageOnJupiter;
+  this.timePastExpectancy = timePastExpectancy;
+  this.timeToDie;
   } 
 
   getAgeInDays (birthYear, birthMonth, birthDay) {
@@ -13,14 +18,33 @@ export class User {
   }
 
   convertEarthAgeToOtherPlanetAge() {
-    if (mercury.planetName === "mercury") {
+    if (planet.planetName === "mercury") {
       this.ageOnMercury = Number.parseFloat((this.ageInDays / 88).toPrecision(5))
-     }
-    }
+     } else if (planet.planetName === "venus") {
+      this.ageOnVenus = Number.parseFloat((this.ageInDays / 225).toPrecision(5))
+    } else if (planet.planetName === "mars") {
+      this.ageOnMars = Number.parseFloat((this.ageInDays / 686).toPrecision(5)) 
+    } else if (planet.planetName === "jupiter") {
+      this.ageOnJupiter = Number.parseFloat((this.ageInDays / 4328).toPrecision(5))
+    } 
+  }
+
   calculateDoomsday() {
-    this.timeToDie = 414 - this.ageOnMercury 
+    if (planet.planetName === "mercury") {
+    this.timeToDie = 414 - this.ageOnMercury
+    } else if (planet.planetName === "venus") {
+      this.timeToDie = 162 - this.ageOnVenus
+    } else if (planet.planetName === "mars") {
+      this.timeToDie = 53 - this.ageOnMars
+    } else if (planet.planetName === "jupiter") {
+      this.timeToDie = 8.41 - this.ageOnJupiter}
+
+    if (this.timeToDie < 0) {
+      this.timePastExpectancy = Number.parseFloat((this.timeToDie * (-1)).toPrecision(2))
+    }
   }
-  }
+}
+  
 
 // know how many years old i am on earth
 // know how many days in a mercury year

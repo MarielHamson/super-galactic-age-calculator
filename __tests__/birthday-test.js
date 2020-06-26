@@ -10,20 +10,29 @@ describe('User', () => {
 
   test('Should convert users age in days on Earth to users age on other planet in days', () => {
     const user1 = new User;
-    const mercury = new Planet ("mercury");
-    mercury.getDays();  
+    const planet = new Planet ("jupiter");
+    // mercury.getDays();  
     user1.getAgeInDays(1987, 8, 13);
     user1.convertEarthAgeToOtherPlanetAge();
-    expect(user1.ageOnMercury).toBe(135.74)
+    expect(user1.ageOnJupiter).toBe(2.76)
+
   });
 
   test ('Should determine how many years away from life expectancy fulfillment', () => {
     const user1 = new User(12000, 136);
-    const mercury = new Planet ("mercury");
+    const planet = new Planet ("jupiter");
     user1.getAgeInDays(1987, 8, 13);
     user1.convertEarthAgeToOtherPlanetAge();
-    console.log
     user1.calculateDoomsday();
-    expect(user1.timeToDie).toBe(278.26)
+    expect(user1.timeToDie).toBe(5.65)
   })
+
+  test ('Should determine how many years past life expectancy lived', () => {
+    const user1 = new User();
+    const planet = new Planet ("jupiter");
+    user1.getAgeInDays(1900, 8, 13);
+    user1.convertEarthAgeToOtherPlanetAge();
+    user1.calculateDoomsday();
+    expect(user1.timePastExpectancy).toBe(1.7)
+  });
 });

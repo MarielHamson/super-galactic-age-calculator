@@ -4,15 +4,4 @@ export class Planet {
     this.days;
     this.earthYears;
   }
-
-  getDays() {
-    if (this.planetName === "mercury") {
-      this.days = 88
-    }
-  }
-
-  convertToEarthYears(){
-    this.earthYears = Number.parseFloat((this.days / 365).toPrecision(2))
-  }
-}
-
+};
