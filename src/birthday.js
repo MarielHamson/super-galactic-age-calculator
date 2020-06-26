@@ -1,4 +1,4 @@
-import { Planet } from "../src/planet-years";
+import { Planet } from "./planet-name";
 const planet = new Planet ("jupiter");
 
 export class User {
@@ -44,8 +44,3 @@ export class User {
     }
   }
 }
-  
-
-// know how many years old i am on earth
-// know how many days in a mercury year
-// find years old on mercury
