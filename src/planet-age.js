@@ -1,14 +1,13 @@
 export class Planet {
-  constructor (planetName, days) {
+  constructor (planetName) {
     this.planetName = planetName;
     this.days = 0;
   }
 
   getDays() {
-    // if(this.planetName === "mercury") {
-    //   this.days = 
-    // }
+    if (this.planetName === "mercury") {
+      this.days = 88
+    }
   }
-
 }
 

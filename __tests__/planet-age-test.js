@@ -8,7 +8,8 @@ describe('Planet', () => {
 
   test('Should return planet days property', () => {
     const mercury = new Planet("mercury")
-    expect(mercury.getDays()).toBe("88");
+    mercury.getDays();
+    expect(mercury.days).toBe(88);
   });
 
 });
