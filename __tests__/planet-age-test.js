@@ -5,4 +5,10 @@ describe('Planet', () => {
     const mercury = new Planet
     expect (mercury.days).toBe(0);
   });
+
+  test('Should return planet name property', () => {
+    const mercury = new Planet
+    expect(mercury.planetName).toBe("mercury");
+  });
+  
 });
