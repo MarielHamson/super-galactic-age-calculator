@@ -3,7 +3,8 @@ export class User {
   this.ageInDays = age;
   } 
 
-  getAgeInDays (yearsOld, birthMonth, birthDay) {
-  this.ageInDays = yearsOld * 365 + (birthMonth*30.5) + birthDay
+  getAgeInDays (birthYear, birthMonth, birthDay) {
+    let d = new Date();
+    this.ageInDays = (d.getFullYear() - (birthYear+1)) * 365.26 + (birthMonth*30.5) + birthDay
   }
 }
