@@ -1,5 +1,5 @@
 import { User } from "../src/birthday";
-import { Planet } from "../src/planet-years";
+import { Planet } from "../src/planet-name";
 
 describe('User', () => {
   test('Should return user age in Earth days', () => {
@@ -11,7 +11,6 @@ describe('User', () => {
   test('Should convert users age in days on Earth to users age on other planet in days', () => {
     const user1 = new User;
     const planet = new Planet ("jupiter");
-    // mercury.getDays();  
     user1.getAgeInDays(1987, 8, 13);
     user1.convertEarthAgeToOtherPlanetAge();
     expect(user1.ageOnJupiter).toBe(2.76)
