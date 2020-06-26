@@ -8,10 +8,12 @@ describe('User', () => {
   expect(user1.ageInDays).toBe(11945.32)
   });
 
-  test('Should convert earth age in days to other planet age in days', () => {
+  test('Should convert users age in days on Earth to users age on other planet in days', () => {
     const user1 = new User;
-    const mercury = new Planet;
+    const mercury = new Planet ("mercury");
     mercury.getDays();
-    expect(user1.convertToOtherPlanetDays("mercury")).toBe(" ")
+    mercury.convertToEarthYears();
+    user1.convertEarthAgeToOtherPlanetAge();
+    expect(user1.ageOnMercury).toBe(136)
   });
 });
