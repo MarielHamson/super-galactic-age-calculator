@@ -5,7 +5,7 @@ describe('User', () => {
   test('Should return user age in Earth days', () => {
   const user1 = new User;
   user1.getAgeInDays(1987, 8, 13);
-  expect(user1.ageInDays).toBe(11945.32)
+  expect(user1.ageInEarthDays).toBe(11945.32)
   });
 
   test('Should convert users age in days on Earth to users age on other planet in days', () => {

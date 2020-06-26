@@ -2,30 +2,30 @@ import { Planet } from "../src/planet-years";
 const planet = new Planet ("jupiter");
 
 export class User {
-  constructor (timePastExpectancy) {
-  this.ageInDays;
+  constructor () {
+  this.ageInEarthDays;
   this.ageOnMercury;
   this.ageOnVenus;
   this.ageOnMars;
   this.ageOnJupiter;
-  this.timePastExpectancy = timePastExpectancy;
+  this.timePastExpectancy;
   this.timeToDie;
   } 
 
   getAgeInDays (birthYear, birthMonth, birthDay) {
     let d = new Date();
-    this.ageInDays = (d.getFullYear() - (birthYear+1)) * 365.26 + (birthMonth*30.5) + birthDay
+    this.ageInEarthDays = (d.getFullYear() - (birthYear+1)) * 365.26 + (birthMonth*30.5) + birthDay
   }
 
   convertEarthAgeToOtherPlanetAge() {
     if (planet.planetName === "mercury") {
-      this.ageOnMercury = Number.parseFloat((this.ageInDays / 88).toPrecision(5))
+      this.ageOnMercury = Number.parseFloat((this.ageInEarthDays / 88).toPrecision(5))
      } else if (planet.planetName === "venus") {
-      this.ageOnVenus = Number.parseFloat((this.ageInDays / 225).toPrecision(5))
+      this.ageOnVenus = Number.parseFloat((this.ageInEarthDays / 225).toPrecision(5))
     } else if (planet.planetName === "mars") {
-      this.ageOnMars = Number.parseFloat((this.ageInDays / 686).toPrecision(5)) 
+      this.ageOnMars = Number.parseFloat((this.ageInEarthDays / 686).toPrecision(5)) 
     } else if (planet.planetName === "jupiter") {
-      this.ageOnJupiter = Number.parseFloat((this.ageInDays / 4328).toPrecision(5))
+      this.ageOnJupiter = Number.parseFloat((this.ageInEarthDays / 4328).toPrecision(5))
     } 
   }
 
