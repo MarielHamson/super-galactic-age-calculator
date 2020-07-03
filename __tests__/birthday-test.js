@@ -6,7 +6,7 @@ describe('User', () => {
     const user = new User;
     user.planetName = "Leilani"
     user.validInputChecker();
-    expect (user.planetName).toBe("Error!");
+    expect(user.planetName).toBe("Error!");
   });
 
   test('Should return user age in Earth days', () => {
