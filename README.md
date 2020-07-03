@@ -19,12 +19,7 @@ _This application will take user's age on Earth and convert it to ages on differ
 
 
 
-## Planet Details
-
-_Here are the conversions for each planet_
-
-
-Planet |  Solar year length  | Comparison to Earth |
+| Planet |  Solar year length  | Comparison to Earth |
 | ------- | ----- | ------ | ------ | ------- |
 | Mercury | 88 days | .24 Earth years |
 | Venus | 225 days | .62 Earth years |
@@ -34,7 +29,7 @@ Planet |  Solar year length  | Comparison to Earth |
 | Saturn | 10,753 days | 29.46 Earth years |
 | Uranus | 30,664 days | 84 Earth years |
 | Neptune | 60,148 days | 164 Earth years |
-| Pluto | 90,735 days | 248 Earth years 
+| Pluto | 90,735 days | 248 Earth years |
 
 ## NPM setup (advanced)
 
