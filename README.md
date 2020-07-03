@@ -21,6 +21,7 @@ _This application will take user's age on Earth and convert it to ages on differ
 
 ## Planet Details
 
+_Here are the conversions for each planet_
 
 | Planet |  Solar year length  | Comparison to Earth |
 | ------- | ----- | ------ | ------ | ------- |
