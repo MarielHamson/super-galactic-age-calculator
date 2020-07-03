@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application will take user's age on Earth and convert it to ages on different planets according to how long their solar years are. PLUTO WILL BE INCLUDED, FIGHT ME ON THIS!_
+_This application will take user's age on Earth and convert it to ages on different planets according to how long their solar years are. PLUTO WILL EVENTUALLY BE INCLUDED, FIGHT ME ON THIS!_
 
 | Behavior | Input | Output |  Completed(Y/N?)  | 
 | -------- | ----- | ------ | -------- |
@@ -18,18 +18,13 @@ _This application will take user's age on Earth and convert it to ages on differ
 | Return number of years lived past expectancy | 08.13.1900, Venus | "You have lived 83 years past the life expectancy calculated" | Y |
 
 
-
-| Planet |  Solar year length  | Comparison to Earth |
-| ------- | ----- | ------ | ------ | ------- |
-| Mercury | 88 days | .24 Earth years |
-| Venus | 225 days | .62 Earth years |
-| Earth | 365 days | 1 Earth year |
-| Mars | 686 days | 1.88 Earth years |
-| Jupiter | 4328 days | 11.86 Earth years |
-| Saturn | 10,753 days | 29.46 Earth years |
-| Uranus | 30,664 days | 84 Earth years |
-| Neptune | 60,148 days | 164 Earth years |
-| Pluto | 90,735 days | 248 Earth years |
+| Planet | Solar year length | Comparison to Earth |  
+| -------- | ----- | ------ | 
+|  Mercury |  88 days | .24 Earth years |
+|  Venus | 225 days | .62 Earth years |
+|  Earth | 365 days | 1 Earth year | 
+|  Mars | 686 days | 1.88 Earth years | 
+|  Jupiter | 4328 days | 11.86 Earth years | 
 
 ## NPM setup (advanced)
 
