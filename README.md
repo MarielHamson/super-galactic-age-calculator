@@ -2,7 +2,7 @@
 
 #### _an application that determines your age on different planets, 6.26.2020_
 
-#### By _**Mariel Hamson **_
+#### By _Mariel Hamson_
 
 ## Description
 
@@ -10,10 +10,10 @@ _This application will take user's age on Earth and convert it to ages on differ
 
 | Behavior | Input | Output |  Completed(Y/N?)  | 
 | -------- | ----- | ------ | -------- |
-|  Return an error when incorrect input is received |  abcd! | " "   | Y
+|  Return an error when incorrect input is received |  abcd! | "Error!"   | Y
 |  Return age in Earth days, given birthdate | 08/13/1987 | ~1200 days old | Y
-|  Return the equivalent planet years | Mercury | .24 Earth Years | Y
-|  Return age in Mercury based on Earth birthday |  08.13.1987, Mercury | "135.74 years old on Mercury" | Y |
+|  Return the equivalent planet years (Either Mercury, Venus, Mars or Jupiter) | Mercury | .24 Earth Years | Y
+|  Return age on other planet based on Earth birthday |  08.13.1987, Mercury | "135.74 years old on Mercury" | Y |
 |  Returns time to life expectancy based on date of birth with static life expectancy | 08.13.1987, Mercury | "Your life expectancy is 8.5 years on Mercury, enjoy your remaining time!" | Y |
 | Return number of years lived past expectancy | 08.13.1900, Venus | "You have lived 83 years past the life expectancy calculated" | Y
 
@@ -21,17 +21,17 @@ _This application will take user's age on Earth and convert it to ages on differ
 
 ## Planet Details
 
-| Planet |  Solar year length  | Comparison to Earth 
+| Planet |  Solar year length  | Comparison to Earth |
 | ------- | ----- | ------ | ------ | ------- |
-| Mercury | 88 days | .24 Earth years
-| Venus | 225 days | .62 Earth years
-| Earth | 365 days | 1 Earth year
-| Mars | 686 days | 1.88 Earth years
-| Jupiter | 4328 days | 11.86 Earth years
-| Saturn | 10,753 days | 29.46 Earth years
-| Uranus | 30,664 days | 84 Earth years
-| Neptune | 60,148 days | 164 Earth years
-| Pluto | 90,735 days | 248 Earth years
+| Mercury | 88 days | .24 Earth years |
+| Venus | 225 days | .62 Earth years |
+| Earth | 365 days | 1 Earth year |
+| Mars | 686 days | 1.88 Earth years |
+| Jupiter | 4328 days | 11.86 Earth years |
+| Saturn | 10,753 days | 29.46 Earth years |
+| Uranus | 30,664 days | 84 Earth years |
+| Neptune | 60,148 days | 164 Earth years |
+| Pluto | 90,735 days | 248 Earth years |
 
 ## NPM setup (advanced)
 
@@ -53,7 +53,7 @@ _Please let me know if you have any questions or concerns at mariel.hamson@gmail
 
 ## Technologies Used
 
-_Javascript, webpack, Jest,_
+_Javascript, webpack, Jest_
 
 ### License
 
