@@ -12,10 +12,10 @@ _This application will take user's age on Earth and convert it to ages on differ
 | -------- | ----- | ------ | -------- |
 |  Return an error when incorrect input is received |  abcd! | "Error!"   | Y
 |  Return age in Earth days, given birthdate | 08/13/1987 | ~1200 days old | Y
-|  Return the equivalent planet years (Either Mercury, Venus, Mars or Jupiter) | Mercury | .24 Earth Years | Y
+|  Return the equivalent planet years (Either Mercury, Venus, Mars or Jupiter) | Mercury | .24 Earth Years | Y |
 |  Return age on other planet based on Earth birthday |  08.13.1987, Mercury | "135.74 years old on Mercury" | Y |
 |  Returns time to life expectancy based on date of birth with static life expectancy | 08.13.1987, Mercury | "Your life expectancy is 8.5 years on Mercury, enjoy your remaining time!" | Y |
-| Return number of years lived past expectancy | 08.13.1900, Venus | "You have lived 83 years past the life expectancy calculated" | Y
+| Return number of years lived past expectancy | 08.13.1900, Venus | "You have lived 83 years past the life expectancy calculated" | Y |
 
 
 
